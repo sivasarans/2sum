@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='tamilan',  # Your package name
-    version='0.1.5',
+    version='0.1.9',
     packages=find_packages(where='src'),  # Specify the source directory
     package_dir={'': 'src'},  # This will include your twosum.py file
     install_requires=[

@@ -111,3 +111,26 @@ def helper() -> List[str]:
         "twoSum(numbers: List[int], target: int) -> List[int]",
         "is_subsequence(s: str, t: str) -> bool"
     ]
+class Bot:
+    def __init__(self, api_key):
+        """
+        Initialize the chatbot with the AI instance.
+        """
+        self.ai = AI(api_key)
+        print("Tamilan AI Chatbot is ready to chat! 🚀")
+
+    def chat(self):
+        """
+        Start the chatbot interaction.
+        """
+        print("Type 'exit' to end the chat.\n")
+        while True:
+            user_input = input("You: ")
+            if user_input.lower() == 'exit':
+                print("Chatbot: Goodbye! 👋")
+                break
+            try:
+                response = self.ai.generate_text(user_input)
+                print(f"Chatbot: {response}")
+            except Exception as e:
+                print(f"Chatbot: Sorry, an error occurred: {e}")

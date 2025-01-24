@@ -1,6 +1,8 @@
 README.md
 setup.py
 src/tamilan/__init__.py
+src/tamilan/chatbot.py
+src/tamilan/functions.py
 src/tamilan/twosum.py
 src/tamilan.egg-info/PKG-INFO
 src/tamilan.egg-info/SOURCES.txt
